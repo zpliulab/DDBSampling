@@ -21,13 +21,13 @@ These parameter can be specific from the following:
 * --neg_sampling_strategy Choose the negative sampling strategy from ['RANDOM', 'RANDOM_GO', 'RANDOM_distance', 'RANDOM_subcellular', 'DDB', 'DDB_GO', 'DDB_distance', 'DDB_subcellular']
 * --validation_strategy [CV, c1c2c3] CV refers to the transductive evaluation, c1c2c3 refers to inductive evaluation.
 
-*--distance: Set the distance limitation (applies to RANDOM_distance and DDB_distance strategies). This sets a maximum distance between two nodes in the negative sampling process (default is 3).
-*--GO_sim: Set the GO similarity threshold (applies to RANDOM_GO, DDB_GO, RANDOM_subcellular, and DDB_subcellular strategies). This sets the minimum GO similarity for negative sampling (default is 0.1).
-*--if_GO_Sub: Set to True to enable the calculation of GO similarity and subcellular localization. This option is only available when using the HURI, INBIOMAP, or BIOGRID datasets (default is True).
-*--CV_frac: Set the fraction of the dataset to be used for training in cross-validation (default is 0.8).
-*--fusion_type: Choose the fusion type for combining features: ['CAT', 'attention'] (default is CAT).
-*--device: Specify the device for training (e.g., cuda:0 for GPU or cpu for CPU, default is cuda:0).
-*--batch_size: Set the batch size for training (default is 32).
+* --distance: Set the distance limitation (applies to RANDOM_distance and DDB_distance strategies). This sets a maximum distance between two nodes in the negative sampling process (default is 3).
+* --GO_sim: Set the GO similarity threshold (applies to RANDOM_GO, DDB_GO, RANDOM_subcellular, and DDB_subcellular strategies). This sets the minimum GO similarity for negative sampling (default is 0.1).
+* --if_GO_Sub: Set to True to enable the calculation of GO similarity and subcellular localization. This option is only available when using the HURI, INBIOMAP, or BIOGRID datasets (default is True).
+* --CV_frac: Set the fraction of the dataset to be used for training in cross-validation (default is 0.8).
+* --fusion_type: Choose the fusion type for combining features: ['CAT', 'attention'] (default is CAT).
+* --device: Specify the device for training (e.g., cuda:0 for GPU or cpu for CPU, default is cuda:0).
+* --batch_size: Set the batch size for training (default is 32).
 
 Example for training and validation:
 
