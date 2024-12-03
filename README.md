@@ -47,5 +47,4 @@ Use draw_degree2.py to visualize the degree distribution of positive and negativ
 Use draw_test.py to visualize the relationship between predicted results, degree distribution, and shortest path distance between nodes in the test set.
 Use draw_test2.py to explore the relationship between GO similarity, subcellular localization, and degree distribution in the test set. This visualization is only applicable to the HURI, INBIOMAP, or BIOGRID datasets, and is controlled by the --if_GO_Sub parameter.
 
-## License
-This repository is released under an [MIT License](LICENSE).
+
