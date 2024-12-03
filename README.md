@@ -12,7 +12,7 @@
 
 ## Usage for reproducing the results in paper
 
-Model training
+**Model training:**
 
     python reproduce.py --task ** --dataset_name ** --classifier ** --neg_sampling_strategy ** --validation_strategy ** --distance ** --GO_sim ** --if_GO_Sub ** --CV_frac ** --fusion_type ** --device ** --batch_size **
 
@@ -48,7 +48,7 @@ These parameter can be specific from the following:
 
 *   `--batch_size`: Set the batch size for training (default is 32).
 
-Example for training and validation:
+**Example for training and validation:**
 
 For example, training and validation:
 
@@ -64,8 +64,9 @@ If you want to attempt adding restrictions on the shortest distance information 
 
     python reproduce.py --task PPI --dataset_name HURI --classifier SEQ_RF --neg_sampling_strategy RANDOM --validation_strategy CV --GO_sim 0.1 --if_GO_Sub True 
 
-Visualization
-After training and validation
+**Visualization:**
+
+&#x20;After training and validation:
 
     python draw_degree.py --task PPI --dataset_name HURI --classifier SEQ_RF --neg_sampling_strategy RANDOM --validation_strategy CV
 
